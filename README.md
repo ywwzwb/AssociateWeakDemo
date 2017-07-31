@@ -42,7 +42,7 @@ void *weakValueKey = NULL;
 ![崩溃了](http://upload-images.jianshu.io/upload_images/943998-46ad4f6d3dcd8383.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 解决方案
-最简单的解决方案就是使用block 包起来. 先来看代码
+最简单的解决方案就是使用 block 包起来. 先来看代码
 ```
 -(void)setWeakvalue:(NSObject *)weakvalue {
     __weak typeof(weakvalue) weakObj = weakvalue;
